@@ -1,10 +1,11 @@
 package multithreads;
 
 import java.security.SecureRandom;
+import java.util.Random;
 
 public class readBuffer implements Runnable{
-	private static final SecureRandom 
-	generator = new SecureRandom();
+	private static final Random 
+	generator = new Random();
 	private final buffer sharedLocation;
 	
 	public readBuffer(buffer sharedLocation) {
